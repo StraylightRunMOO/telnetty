@@ -1,0 +1,13 @@
+# MSDP Test Samples
+
+# Simple variable
+MSDPVar "name" MSDPVal "test"
+01 6E 61 6D 65 02 74 65 73 74
+
+# Table
+MSDPVar "player" MSDPTableOpen MSDPVar "hp" MSDPVal "100" MSDPVar "mp" MSDPVal "50" MSDPTableClose
+01 70 6C 61 79 65 72 03 01 68 70 02 31 30 30 01 6D 70 02 35 30 04
+
+# Array
+MSDPVar "items" MSDPArrayOpen MSDPVal "sword" MSDPVal "shield" MSDPArrayClose
+01 69 74 65 6D 73 05 02 73 77 6F 72 64 02 73 68 69 65 6C 64 06
